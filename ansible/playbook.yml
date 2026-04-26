@@ -1,0 +1,5 @@
+- hosts: all
+  roles:
+    - kops
+    - docker
+    - kubernetes

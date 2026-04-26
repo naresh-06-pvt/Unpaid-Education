@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PLAYER JOIN PAGE */
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b006d, #4b148c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  color: white;
+  font-size: 52px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.login-card {
+  background: white;
+  padding: 25px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px #00c853;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+.login-card h3 {
+  text-align: center;
+  color: #2b006d;
+  margin: 10px 0;
+}
+
+.login-card button,
+.main-btn,
+.start-btn {
+  width: 100%;
+  padding: 15px;
+  background: #222;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* AVATAR SELECT */
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.avatar {
+  font-size: 26px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.active-avatar {
+  border: 3px solid #00c853;
+  background: #eaffef;
+}
+
+/* HOST PAGE */
+.host-bg {
+  min-height: 100vh;
+  padding: 30px;
+  background: radial-gradient(circle, #6b2bbd, #2d0b59);
+  color: white;
+}
+
+.pin-card {
+  max-width: 420px;
+  margin: 120px auto;
+  background: white;
+  color: #2d0b59;
+  padding: 35px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.game-logo {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.host-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.host-top h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.pin-box {
+  background: white;
+  color: #2d0b59;
+  padding: 15px 25px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.start-btn {
+  width: 180px;
+  background: #00c853;
+}
+
+.waiting-title {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 32px;
+}
+
+/* KAHOOT STYLE PLAYER CARDS */
+.kahoot-players-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.kahoot-player-card {
+  background: #3b167f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 140px;
+  justify-content: center;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.kahoot-avatar {
+  font-size: 28px;
+}
+
+.empty-text {
+  font-size: 20px;
+}
+
+/* HOST SCOREBOARD */
+.mini-board {
+  max-width: 650px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.mini-board h2 {
+  text-align: center;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  color: #2d0b59;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* QUESTION PAGE */
+.question-bg {
+  min-height: 100vh;
+  background: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+}
+
+.question-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer-circle {
+  width: 58px;
+  height: 58px;
+  background: #7e3fd1;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.answer-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.question-title {
+  font-size: 28px;
+  margin: 18px 0;
+}
+
+.brand-box {
+  width: 300px;
+  height: 160px;
+  margin: 0 auto 20px;
+  background: #12a4a8;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  border-radius: 4px;
+}
+
+.answers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.answer-btn {
+  border: none;
+  color: white;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shape {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.option-0 {
+  background: #e91b3c;
+}
+
+.option-1 {
+  background: #1368ce;
+}
+
+.option-2 {
+  background: #d89e00;
+}
+
+.option-3 {
+  background: #26890c;
+}
+
+/* RESULT PAGE */
+.result-bg {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 90px;
+  background: white;
+}
+
+.correct {
+  color: green;
+  font-size: 44px;
+}
+
+.wrong {
+  color: red;
+  font-size: 44px;
+}
+
+.timeout {
+  color: orange;
+  font-size: 44px;
+}
+
+.small-leaderboard {
+  margin-top: 30px;
+}
+
+/* FINAL LEADERBOARD */
+.leaderboard-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a4cff, #33106b);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.board-title {
+  font-size: 42px;
+}
+
+.final-board {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.final-row {
+  background: #3b167f;
+  margin: 12px 0;
+  padding: 18px 25px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+}

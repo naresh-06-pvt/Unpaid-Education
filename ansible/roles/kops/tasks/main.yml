@@ -1,0 +1,12 @@
+- name: Download kops binary
+  get_url:
+    url: https://github.com/kubernetes/kops/releases/download/v1.27.0/kops-linux-amd64
+    dest: /usr/local/bin/kops
+    mode: '0755'
+
+- name: Verify kops installation
+  command: kops version
+  register: kops_version
+
+- debug:
+    msg: "Installed kops version: {{ kops_version.stdout }}"

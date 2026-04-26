@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quiz-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: quiz-frontend
+  template:
+    metadata:
+      labels:
+        app: quiz-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: your-dockerhub/quiz-frontend:latest
+        ports:
+        - containerPort: 3000
