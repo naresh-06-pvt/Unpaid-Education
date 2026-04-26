@@ -1,5 +1,12 @@
 name: Deploy to EC2
 
+# updated
+
+on:
+  push:
+    branches:
+      - main
+
 on:
   push:
     branches:
